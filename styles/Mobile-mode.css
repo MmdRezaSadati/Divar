@@ -1,0 +1,103 @@
+@media screen and (max-width: 1000px) {
+    #MobileFooter{display: flex;}
+    .header{padding: 0;}
+    .header{width: 100%;}
+    .gridProduct{background-color: #fff;}
+    #Divarheader >img , #Divarheader  .location , #Divarheader .Category , #Divarheader  .account ,
+    #Divarheader .Category , #Divarheader  .support , #Divarheader  .Chat ,#Divarheader  .Important-Button{display: none;}
+    .Search-Box-Divar{
+        width: 100%;
+        border-radius: 0 !important;
+        height: 35px;
+    }
+    #DivarContent{padding: 55px 0 90px;}
+
+    #DivarheaderMobile{display: block;width: 100%;}
+    #DivarheaderMobile .Search-Box-Divar{
+        width: 97.9%;
+        height: 35px;
+        align-items: center;
+        display: flex;
+        border-radius: 0;
+    }
+    .header #Divarheader  .Category .DivarMegaMenu{
+        height: 0;
+        appearance: none;
+        overflow: hidden;
+    }
+    #openMega:checked + .header #Divarheader  .Category .DivarMegaMenu{height: 100%;}
+    .Content{flex-flow: column-reverse;}
+    .categories_filter{
+        display: flex;
+        white-space: nowrap;
+        font-size: 12px;
+        width: 85%;
+        direction: rtl;
+        overflow-x: auto;
+        justify-content: start;
+        overflow-x: auto;
+    }
+    .Content .sideOfContent{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .categories_filter h3{display: none;}
+    .categories_filter label:hover{background-color: transparent;}
+    
+    .categories:checked + label{
+        background-color: #fff;
+        box-shadow: none;
+        box-shadow: 0 5px 5px 1px #00000010;
+        font-size: 12.5px;
+    }
+    .categories_filter label div{
+        gap: 8px;
+        flex-flow: column
+    }
+    .categories_filter label div img{
+        background-color:  #fff;
+        width: 15px;
+        padding: 10px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #0000006e;
+    }
+    .categories_filter label{
+        padding: 15px;
+        margin: 0 3px;
+    }
+    .categories_filter label > img{display: none;}
+    .Content .gridProduct{
+        width: 99%;
+        align-items: center;
+    }
+
+    .show .PSPage-content{flex-flow: column-reverse;}
+    .PSPage-content > div{
+        width: 90%;
+    }
+    #BigImagePSPage{
+        width: 550px;
+        height: 400px;
+    }
+    .PSPage-content > .PSPContent-right{padding: 30px 20px 90px;}
+    
+}
+@media screen and (max-width: 666px){
+    .DivarProduct{width: 95%;}
+    .estekhdamNotice{width: 100%;font-size: 16px;}
+    #DivarheaderMobile .Search-Box-Divar{width: 95.4%;}
+    .DivarProduct .DivarProductLeft .productPicture{width: 190px;}
+    #BigImagePSPage{
+        width: 400px;
+        height: 350px;
+    }
+    #galleryPSPage img{width: 100px;}
+}
+@media screen and (max-width: 495px){
+    .categories_filter label{
+        padding: 9px;
+        margin: 0 2px;
+    }
+}

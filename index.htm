@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Divar - MohamadeReza Sadati</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/Mobile-mode.css">
+        <link rel="shortcut icon" href="images/Logo.svg" type="image/x-icon">
+    </head>
+    <body>
+        <!-------- Start Header -------->
+            <input type="checkbox" id="openMega">
+            <div class="header">
+                    <div id="Divarheader">
+                        <img src="./images/Logo.svg" class="logo">
+                        <div id="MenuHeader">
+                            <div class="location"><img src="./images/Icons/Location.png" >ساری</div>
+                            <div class="Category">
+                                <label for="openMega">دسته ها <img src="./images/Icons/Up.svg" style="rotate: 180deg;opacity: .5; transition: .1s;" ></label>
+                                <!-- start Mega Menu -->
+                                    <div class="DivarMegaMenu">
+                                        <div class="categoryDetaile">
+                                            <span><img src="./images/Icons/Arrow.png" width="15" >همه آگهی ها </span>
+                                            <ul>
+                                                <div><img src="./images/Icons/realState.png" >املاک</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                                <li>
+                                                    <div class="MegaMenuCaption">
+                                                        <ul>فروش مسکونی    <li>آپارتمان</li><li>خانه و ویلا</li><li>زمین و کلنگی</li></ul>
+                                                        <ul>اجاره مسکونی   <li>آپارتمان</li><li>خانه و ویلا</li></ul>
+                                                        <ul>فروش مسکونی    <li>آپارتمان</li><li>خانه و ویلا</li><li>زمین و کلنگی</li></ul>
+                                                        <ul>اجاره مسکونی   <li>آپارتمان</li><li>خانه و ویلا</li></ul>
+                                                        <ul>فروش مسکونی    <li>آپارتمان</li><li>خانه و ویلا</li><li>زمین و کلنگی</li></ul>
+                                                        <ul>اجاره مسکونی   <li>آپارتمان</li><li>خانه و ویلا</li></ul>
+                                                    </div>
+                                                    <div class="MegaMenuImage"><img src="./images/real-estate.png" style="width: 250px;"></div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Car.png" >وسایل نقلیه</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                                <li>
+                                                    <div class="MegaMenuCaption">
+                                                        <ul>خودرو  <li>سواری و وانت</li><li>کلاسیک</li><li>اجاره ای</li><li>سنگین</li></ul>
+                                                        <ul>موتورسیکلت</ul>
+                                                        <ul>قطعات یدکی و لوازم جانبی</ul>
+                                                        <ul>قایق و سایر وسایل نقلیه</ul>
+                                                    </div>
+                                                    <div class="MegaMenuImage"><img src="./images/vehicles.png" style="width: 250px;"></div>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Mobile.png" >کالای دیجیتال</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Home.png" >خانه و آشپزخانه</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Service.png" >خدمات</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Watch.png" >وسایل شخصی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Games.png" >سرگرمی و فراغت</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Friends.png" >اجتماعی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Chair.png" >تجهیزات و صنعتی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                            <ul>
+                                                <div><img src="./images/Icons/Chamedon.png" >استخدام و کاریابی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;" >
+                                            </ul>
+                                        </div>
+                                        <div class="categoryDetaCaption">
+                                        </div>
+                                    </div>
+                                <!-- end Mega Menu -->
+                            </div>
+                            <div class="Search-Box-Divar"><img src="./images/Icons/Search.svg"><input id="SearchBoxAjax" onkeyup="searchAjax()" type="text" placeholder="جستجو در همه آگهی ها"></div>
+                            <input type="checkbox" id="UserMenu">
+                            <div class="account">
+                                <label for="UserMenu"><img src="./images/Icons/User.png" >دیوار من</label>
+                                <div class="UserMenu">
+                                    <li><img src="./images/Icons/login.png" >ورود</li>
+                                    <li><img src="./images/Icons/Save.png" >نشان ها</li>
+                                    <li><img src="./images/Icons/YadDashtHa.png" >یادداشت ها</li>
+                                    <li><img src="./images/Icons/History.png" >بازدید های اخیر</li>
+                                    <li><img src="./images/Icons/Shops.png" >دیوار برای کسب و کارها</li>
+                                </div>
+                            </div>
+                            <div class="Chat"><img src="./images/Icons/Chat.png" >چت</div>
+                            <div class="support">پشتیبانی</div>
+                            <div class="Important-Button">ثبت آگهی</div>
+                        </div>
+                    </div>
+            </div>
+        <!-------- End Header -------->
+        <!-------- Start Content -------->
+            <div id="DivarContent" >
+                <span class="loadingLine"></span>
+                <div class="DiavarSlider"></div>
+                <div class="" id="Content">
+                    <div class="gridProduct">
+                        <button class="estekhdamNotice"><img src="./images/estekhdam_notice.png" style="width: 20px;margin: 0 4px;" >  هر شغلی بگی! <span class="numberFont">4000</span>  نوع شغل در دیوار</button>
+                        <div class="DivarGrid">
+                        </div>
+                        <div class="ProductSinglePage">
+                        </div>
+                    </div>
+                    <div class="sideOfContent">
+                        <div class="categories_filter">
+                            <h3>دسته ها</h3>
+                            <input type="radio" name="categories" class="categories"onclick="fillterData()" id="AllCat" checked >
+                            <label for="AllCat"><div><img src="./images/Icons/Menu.png" > همه</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories" class="categories"onclick="fillterData()" id="realState" >
+                            <label for="realState"><div><img src="./images/Icons/realState.png" >املاک</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories" class="categories"onclick="fillterData()" id="Car" >
+                            <label for="Car"><div><img src="./images/Icons/Car.png" >وسایل نقلیه</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories" class="categories"onclick="fillterData()" id="Digital" >
+                            <label for="Digital"><div><img src="./images/Icons/Mobile.png" >کالای دیجیتال</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories"class="categories"onclick="fillterData()"  id="home">
+                            <label for="home"><div><img src="./images/Icons/Home.png" >خانه و آشپزخانه</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories"class="categories"onclick="fillterData()"  id="Service">
+                            <label for="Service"><div><img src="./images/Icons/Service.png" >خدمات</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories"class="categories"onclick="fillterData()"  id="Watch">
+                            <label for="Watch"><div><img src="./images/Icons/Watch.png" >وسایل شخصی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories"class="categories"onclick="fillterData()"  id="Games">
+                            <label for="Games"><div><img src="./images/Icons/Games.png" >سرگرمی و فراغت</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories"class="categories"onclick="fillterData()"  id="Friends">
+                            <label for="Friends"><div><img src="./images/Icons/Friends.png" >اجتماعی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories"class="categories"onclick="fillterData()"  id="Chair">
+                            <label for="Chair"><div><img src="./images/Icons/Chair.png" >تجهیزات و صنعتی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                            <input type="radio" name="categories" class="categories"onclick="fillterData()" id="Chamedon">
+                            <label for="Chamedon"><div><img src="./images/Icons/Chamedon.png" >استخدام و کاریابی</div><img src="./images/Icons/Up.svg" style="rotate: 270deg;opacity: .5; transition: .2s;width:13px;" ></label>
+                        </div>
+                    </div>
+                    <div class="ProductSinglePage" id="ProductSinglePage">
+                        <span class="loadingLine"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="closePSPage" onclick="showContent()" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve"><path d="M300.8,721.3c20.1,20.1,52.7,20.1,72.8,0c20.1-20.1,20.1-52.7,0-72.8L175.8,450.7l572.8-0.1c28.4,0,51.5-23,51.5-51.5   c0-28.4-23-51.5-51.5-51.5l-572.8,0.1l197.8-197.8c20.1-20.1,20.1-52.7,0-72.8c-10.1-10-23.2-15.1-36.4-15.1   c-13.2,0-26.3,5-36.4,15.1L15.1,362.8C5.4,372.5,0,385.6,0,399.2c0,13.7,5.4,26.7,15.1,36.4L300.8,721.3z"></path></svg>
+                        <div class="PSPage-content" id="PSPageContent" >
+                            <div class="PSPContent-right">
+                                <h2 id="namePSPage"></h2>
+                                <p id="timePSPage"></p>
+                                <div class="socialPSPage">
+                                    <div class="PSPageRight">
+                                        <button class="Important-Button">اطلاعات تماس</button>
+                                        <button class="ChatButton">چت</button>
+                                    </div>
+                                    <div class="PSPageLeft">
+                                        <img src="./images/Icons/Save.png" width="16" >
+                                        <img src="./images/Icons/Share.png" width="16" >
+                                    </div>
+                                </div>
+                                <div class="features">
+                                    <ul>نام محصول <li id="PRName"></li></ul>
+                                    <ul>دسته بندی<li id="PRCategory"></li></ul>
+                                    <ul>زمان ثبت<li id="PRTime"></li></ul>
+                                    <ul>قیمت محصول<li id="PRPrice"></li></ul>
+                                </div>
+                                <h4>توضیحات</h4>
+                                <p id="CationPSPage"></p>
+                                <div class="payAttention">
+                                    <h4>هشدار سامانه همتا</h4>
+                                    <p>در صورت انجام معامله , از فروشنده کد فعالسازی را گرفته و حتما در حضور ایشان , دستگاه را از طریق #7777* برای سیمکارت خود فعال سازی نمایید</p>
+                                    <a href="#">آموزش تصویری</a>
+                                </div>
+                                <a href="" id="categoryPSPage"></a>
+                            </div>
+                            <div class="PSPContent-left">
+                                <img src="./images/AZ49T2sU.jpg" id="BigImagePSPage" >
+                                <div id="galleryPSPage">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-------- End Content -------->
+        <div id="DivarFooter">
+            <div id="MobileFooter">
+                <div class="MobileFooter-Items"><img src="./images/Logo.svg" >آگهی ها</div>
+                <div class="MobileFooter-Items"><img src="./images/Icons/Menu.png" >دسته ها</div>
+                <div class="MobileFooter-Items"><img src="./images/Icons/Plus.svg" class="Plus" >ثبت آگهی</div>
+                <div class="MobileFooter-Items"><img src="./images/Icons/Chat.png" >چت </div>
+                <div class="MobileFooter-Items"><img src="./images/Icons/User.png" >دیوار من </div>
+            </div>
+        </div>
+        <script src="./scripts/Divar-DataBase.js"></script>
+        <script src="./scripts/Divar-Script.js"></script>
+    </body>
+</html>
